@@ -12,30 +12,30 @@ media_library:
     api_key: "135688745711163"
 
 collections:
-  - name: 'Articles'
-    label: 'Articles'
-    folder: 'content/articles'
+  - name: "Articles"
+    label: "Articles"
+    folder: "content/articles"
     create: true
-    slug: 'index'
-    media_folder: ''
-    public_folder: ''
-    path: '{{title}}/index'
+    slug: "index"
+    media_folder: ""
+    public_folder: ""
+    path: "{{title}}/index"
     editor:
       preview: false
     fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: 'copy'
-    label: 'copy 1'
-    folder: 'content/copy'
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "copy"
+    label: "copy 1"
+    folder: "content/copy"
     create: true
-    slug: 'index'
-    media_folder: ''
-    public_folder: ''
-    path: '{{title}}/index'
+    slug: "index"
+    media_folder: ""
+    public_folder: ""
+    path: "{{title}}/index"
     editor:
-      preview: false
+      preview: true
     fields:
-      - {label: 'copy', name: 'copy', widget: 'string'}
+      - { label: "copy", name: "copy", widget: "string" }
