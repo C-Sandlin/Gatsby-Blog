@@ -16,8 +16,16 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
+        path: `${__dirname}/content/articles`,
+        name: `articles`,
+      },
+    },
+    {
+      //add directories HERE like BELOW
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/copy`,
+        name: `copy`,
       },
     },
     {
@@ -131,8 +139,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-netlify-cms`,
       options: {
-        modulePath: `${__dirname}/src/cms.js`
-      }
+        modulePath: `${__dirname}/src/cms.js`,
+      },
     },
   ],
 }

@@ -5,15 +5,15 @@ backend:
 media_folder: static/img
 public_folder: /img
 
-media_library:
-  name: cloudinary
-  config:
-    cloud_name: "colin-sandman"
-    api_key: "135688745711163"
+# media_library:
+#   name: cloudinary
+#   config:
+#     cloud_name: "colin-sandman"
+#     api_key: "135688745711163"
 
 collections:
-  - name: "Articles"
-    label: "Articles"
+  - name: "articles"
+    label: "articles"
     folder: "content/articles"
     create: true
     slug: "index"
@@ -28,10 +28,10 @@ collections:
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "copy"
-    label: "copy 1"
+    label: "copy"
     folder: "content/copy"
     create: true
-    slug: "index"
+    slug: "1234"
     media_folder: ""
     public_folder: ""
     path: "{{title}}/index"
