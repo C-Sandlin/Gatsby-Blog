@@ -20,14 +20,14 @@ module.exports = {
         name: `articles`,
       },
     },
-    {
-      //add directories HERE like BELOW
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/copy`,
-        name: `copy`,
-      },
-    },
+    // {
+    //   //add directories HERE like BELOW
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     path: `${__dirname}/content/copy`,
+    //     name: `copy`,
+    //   },
+    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -136,11 +136,5 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
     `gatsby-plugin-netlify-cms`,
-    {
-      resolve: `gatsby-plugin-netlify-cms`,
-      options: {
-        modulePath: `${__dirname}/src/cms.js`,
-      },
-    },
   ],
 }
