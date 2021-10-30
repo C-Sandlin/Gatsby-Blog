@@ -6,7 +6,9 @@ import "../styles.scss"
 export default function Component() {
   return (
     <Layout>
-      <h1 className="h1-cs">hey</h1>
+      <div id="main-content">
+        <h1 className="h1-cs">hey</h1>
+      </div>
     </Layout>
   )
 }

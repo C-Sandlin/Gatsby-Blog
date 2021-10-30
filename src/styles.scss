@@ -30,6 +30,37 @@ $color-gold: #c79680;
 $color-charcoal: #525252;
 $color-white: #ffffff;
 
-.h1-cs {
-  color: $color-gold;
+/* flexbox properties */
+$flex: flex;
+$flex-dir-row: row;
+$flex-dir-col: column;
+
+/* STYLES */
+
+#main-content {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    color: $color-gold;
+  }
+}
+
+#footer-main {
+  display: flex;
+  flex-direction: row;
+  background-color: $color-gold;
+  min-height: 250px;
+  width: 100%;
+  justify-content: space-around;
+
+  .footer-info {
+    display: flex;
+  }
+
+  .footer-links {
+    display: flex;
+  }
 }
